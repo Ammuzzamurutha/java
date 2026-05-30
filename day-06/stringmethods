@@ -1,0 +1,50 @@
+import java.util.*;
+public class basics1 {
+    public static void main(String[] args) {
+         // string methods
+         String name="Bhanu Kiran";
+          int value=name.length();
+         System.out.println(value); 
+         int value=name.indexOf('K');
+         System.out.println(value);
+         char value=name.charAt(7);
+         System.out.println(value);
+         name=name.toLowerCase();
+        System.out.println(name);
+        name=name.toUpperCase();
+        System.out.println(name);
+        int lastIndex=name.lastIndexOf('a');
+        System.out.println(lastIndex);
+        name=name.trim();
+        System.out.println(name);
+        name=name.replace('a','e');
+        System.out.println(name);
+        if(name.isEmpty()){
+            System.out.println("string is empty");
+        }
+        else{
+            System.out.println("string is not empty");
+        }
+       if(name.contains(" ")){
+            System.out.println("string contains space");
+        }
+        else{
+            System.out.println("string does not contain space");
+       }
+      if(name.equals("password")){
+        System.out.println("string cannot be equal to password");
+      }
+      else{
+        System.out.println("hello "+name);
+      }
+     if(name.equalsIgnoreCase("password")){
+        System.out.println("string cannot be equal to password");
+      }
+      else{
+        System.out.println("hello "+name);
+      }
+        
+    
+ 
+    }
+}
