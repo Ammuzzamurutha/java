@@ -1,0 +1,20 @@
+import java.util.*;
+public class basics1 {
+    public static void main(String[] args) {
+         //substring method
+         Scanner sc = new Scanner(System.in);
+         String str = sc.nextLine();
+         String username=str.substring(0,str.indexOf("@"));
+         String domain=str.substring(str.indexOf("@")+1);
+
+        if(str.contains("@"))
+        {
+            System.out.println("Username: "+username);
+            System.out.println("Domain: "+domain);
+        }
+        else
+        {
+            System.out.println("email should contain @ symbol");
+        }
+    }
+}
